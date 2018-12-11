@@ -4,7 +4,7 @@ pipeline {
     stage('Commit') {
       steps {
         echo 'Commit happens'
-        ./gradlew assembleDebug
+        "./gradlew assembleDebug"
       }
     }
   }
