@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Commit') {
       steps {
-        echo 'Commit happens'
-        bash './gradlew assembleDebug'
+         bash '''#!/bin/bash
+                 gradlew test'''
       }
     }
   }
